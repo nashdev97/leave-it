@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Leave It</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,520;6..72,620&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main>
+      <header class="mast">
+        <h1>Leave It</h1>
+        <p class="lede">
+          Paste the messages and chores you keep rereading. A model on this computer
+          marks what you can ignore, what takes two minutes, and what can wait.
+          The list stays here.
+        </p>
+      </header>
+
+      <form id="pile-form">
+        <label for="pile">One item per line</label>
+        <textarea
+          id="pile"
+          name="pile"
+          rows="8"
+          required
+          spellcheck="true"
+          placeholder="Reply to Priya about Saturday dinner"
+        ></textarea>
+        <div class="actions">
+          <button type="submit" id="sort">Sort the pile</button>
+          <button type="button" id="sample">Load an example</button>
+        </div>
+        <p id="status" class="status" role="status"></p>
+      </form>
+
+      <section id="result" class="decisions" hidden>
+        <h2><span id="waiting">0</span> can wait</h2>
+        <p id="counts" class="summary"></p>
+        <ul id="items"></ul>
+      </section>
+
+      <section class="earlier">
+        <h2>Earlier piles</h2>
+        <ul id="history"></ul>
+      </section>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>
