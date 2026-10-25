@@ -20,11 +20,11 @@ Local only, on purpose. With Ollama running and `gemma3:4b` pulled:
 npm start
 ```
 
-Open http://127.0.0.1:8787 and use the sample pile. A four-line sort took about three minutes on the machine this was built on. There is no hosted demo yet.
+Open http://127.0.0.1:8787 and use the sample pile. A four-line sort took about three minutes on the machine this was built on. There is no hosted demo. The page is a lined list, and an earlier pile reopens without another sort.
 
 ## Code
 
-Repository path on this machine: `leave-it`. It is not pushed. Ask and it can go to GitHub.
+https://github.com/nashdev97/leave-it
 
 ## How I Built It
 
